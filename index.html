@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<p class="height">Висота:   <input type="text" id="height" style="background-color: cornflowerblue; position: relative; left: 7px; border: 1px solid black;"></p>
+		
+		<p class="width">Широта:    <input type="text" id="width" style="background-color: cornflowerblue; position: relative; left: 1px; border: 1px solid black;"></p>
+
+		<button onclick="newCanvas()" class="btn" style="background-color: cornflowerblue; margin: 20px; border: 1px solid black ;"><p></p>Создать</p></button>
+		<br>
+		<a id="download" download="myImage.jpg" href="" onclick="download_img(this);">Download to myImage.jpg</a>
+		<canvas id="myCanvas" ></canvas>
+	</div>
+
+	
+	<script src="index.js"></script>
+</body>
+</html>
