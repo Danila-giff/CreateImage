@@ -6,7 +6,6 @@ input.addEventListener('input', ev => {
   ev.target.value = value;
 })
 
-let canvas = document.getElementById("myCanvas");
 const main = document.querySelector('.main');
 
 
@@ -19,16 +18,19 @@ function newCanvas() {
   canvas.width = inputWidth;
   canvas.style = 'background-color:white';
   main.appendChild(canvas);
-  ctx.font = '30px Arial';
-  ctx.fillText("Helo World",10,50);
+  let ctx = canvas.getContext("2d");  
+  ctx.font = '20px Arial';
+  ctx.fillText(inputHeight + 'x' + inputWidth,5,29);
+  Math.random*256
+  
+
+
 
 };
-let ctx = myCanvas.getContext("2d");  
+  download_img = function(el) {
+    // get image URI from canvas object
+    var imageURI = canvas.toDataURL("image/jpg");
+    el.href = imageURI;
+  };
 
-
-download_img = function(el) {
-  // get image URI from canvas object
-  var imageURI = canvas.toDataURL("image/jpg");
-  el.href = imageURI;
-};
 
