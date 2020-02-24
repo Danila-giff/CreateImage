@@ -7,16 +7,9 @@ input.addEventListener('input', ev => {
 })
 
 let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d");  
 const main = document.querySelector('.main');
 
 
-
-// ctx.beginPath();
-// ctx.rect(20, 40, 50, 50);
-// ctx.fillStyle = "#FF0000";
-// ctx.fill();
-// ctx.closePath();    
 
 function newCanvas() {
   let inputHeight = document.getElementById('height').value;
@@ -30,6 +23,8 @@ function newCanvas() {
   ctx.fillText("Helo World",10,50);
 
 };
+let ctx = myCanvas.getContext("2d");  
+
 
 download_img = function(el) {
   // get image URI from canvas object
