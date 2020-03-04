@@ -26,7 +26,7 @@ html, body {
 /* * { padding: 0; margin: 0; }
 		canvas { background: #eee; display: block; margin: 0 auto; } */
 canvas {
-	position: absolute;
+	/*position: absolute;*/
 	top: -99999px;
 }
 
